@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +11,7 @@ public class Main {
             System.out.println(nomes[i]);
         }
 
+        System.out.println("Começo do ArrayList:");
         ArrayList<String> nomesList = new ArrayList<>();
         nomesList.add("Nicollas");
         nomesList.add("Minecraft");
@@ -22,10 +21,21 @@ public class Main {
         System.out.println(nomesList.get(0));
         System.out.println(nomesList.contains("Minecraft"));
 
+        System.out.println("Começo do Set:");
         Set<String> coisas = new HashSet<String>();
         coisas.add("Sword");
         coisas.add("Shield");
         coisas.add("Bastãozão");
+        System.out.println(nomesList.contains("Minecraft"));
+
+        System.out.println();
+        System.out.println("Começo do Map:");
+        Map<Integer, String> alunos = new HashMap<>();
+        alunos.put(12, "Pedro");
+        alunos.put(15, "Cleitin");
+        alunos.put(18, "João");
+        System.out.println(alunos);
+        System.out.println(alunos.get(15));
 
     }
 }
